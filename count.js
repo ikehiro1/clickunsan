@@ -1,4 +1,4 @@
-const number = document.querySelector('h1');
+const number = document.querySelector('h2');
 const plusButton = document.querySelector('#plus');
 const resetButton = document.querySelector('#reset');
 
