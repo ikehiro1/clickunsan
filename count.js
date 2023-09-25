@@ -1,5 +1,6 @@
 const number = document.querySelector('h2');
 const plusButton = document.querySelector('#plus');
+const downButton = document.querySelector('#down')
 const resetButton = document.querySelector('#reset');
 
 
@@ -16,6 +17,13 @@ let count = 0;
 plusButton.addEventListener('click',() => {
     count ++;
     number.innerHTML = count;
+});
+
+downButton.addEventListener('click',() => {
+    if(count >= 1) {
+    count --;
+    number.innerHTML = count;
+    }
 });
 
 resetButton.addEventListener('click',() => {
